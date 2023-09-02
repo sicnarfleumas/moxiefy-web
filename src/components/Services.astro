@@ -1,0 +1,93 @@
+---
+
+---
+
+<section class="Services" id="Services">
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+      
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+          } 
+        else {
+          content.style.display = "block";
+          }
+      });
+    }
+  </script>
+
+
+  <h1><span>Ser</span>vices</h1>
+
+  <button type="button" class="collapsible">Design</button>
+
+      <div class="content">
+          <p>Transforming visual ideas into a stunning reality, right from conceptualization to final execution. Designs that are not just visually captivating but also aligned with brand identity.</p>
+      </div>
+
+      <button type="button" class="collapsible">Content</button>
+      <div class="content">
+          <p>Tailored content solutions that meet your brand's unique needs, effectively deliver your brand message, connect with the target audience, and drive meaningful engagement. </p>
+      </div>
+
+      <button type="button" class="collapsible" id="SMM">social media marketing</button>
+      <div class="content">
+          <p>Making sure your brand stands out in the digital landscape by staying on top of social media trends and best practices, developing engaging content, and implementing a metrics-led strategy.</p>
+      </div>
+   
+  </div>
+  
+</section>
+
+<style>
+  
+  .Services > h1 {
+    text-align: left;
+  }
+
+  .collapsible {
+    background-color: #FFFFFF;
+    color: #B6E851;
+    cursor: pointer;
+
+    padding-top: 2.5rem;
+    border: none;
+    border-top: .1rem solid #B6E851;
+    
+    text-align: left;
+    outline: none;
+
+    font-family: 'Barlow', sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    }
+
+    
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active, .collapsible:hover {
+        background-color: #6D549E;
+        color: #FFFFFF;
+        border-top: .1rem solid #6D549E;
+    }
+
+    /* Style the collapsible content. Note: hidden by default */
+    .content {
+        display: none;
+        overflow: hidden;
+        
+        color: #6D549E;
+
+        font-family: 'Barlow', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 500;
+        
+    }
+
+</style>

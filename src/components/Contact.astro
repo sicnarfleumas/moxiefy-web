@@ -1,0 +1,125 @@
+---
+import Submit from "./buttons/Submit.astro";
+---
+
+<section class="Contact" id="Contact">
+    <h1>GET IN TO<span>UCH</span></h1>
+<div class="wrap">
+    <div class="Text">
+        <h2>LET'S CRAFT YOUR NEXT <br>INCREDIBLE PROJECT <br>TOGETHER.</h2>
+        <p>I look forward to collaborating with you on your next project. Reach out with requests, ideas or queries and receive a response within 24 hours.</p>
+    </div>
+
+    <div class="Form">
+        <form name="contact" method="POST" data-netlify="true">
+          <div class="Form-wrap">
+            <input type="text"  id="Name" placeholder="Name" required>
+            <input type="email" id="Email" placeholder="E-mail" required>
+            <textarea name="" id="Message" cols="30" rows="5" placeholder="Message"></textarea>
+          </div>
+            <Submit message="SUBMIT" />
+        </form>
+
+
+    </div>
+
+</div>
+
+</section>
+
+<style>
+
+  .Contact > h1 {
+    text-align: right;
+  }
+
+  .Text > h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .Text > p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 28ch;
+  }
+
+  .Text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .wrap {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .Form-wrap   {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        border: .05rem solid #B6E851;
+        padding: 1rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        align-items: center;
+    }
+
+    #Message {
+        min-width: 30rem;
+        min-height: 2rem;
+
+        border: none;
+        border: .25rem solid #6D549E;
+        background-color: transparent;
+        color: #B6E851;
+
+        font-family: 'barlow', sans-serif;
+        font-size: 1.5rem;
+
+        padding: .5rem;
+    }
+
+    #Name, #Email {
+        border: none;
+        border: .25rem solid #6D549E;
+        background-color: transparent;
+        color: #B6E851;
+        font-family: 'barlow', sans-serif;
+        font-size: 1.5rem;
+        padding: .5rem;
+    }
+
+    #send {
+        font-family: 'barlow', sans-serif;
+        font-size: 1.5rem;
+
+        width: fit-content;
+        padding: .5rem 1rem .5rem;
+
+
+        border: none;
+
+        color: white;
+        background-color: #6D549E;
+
+    }
+</style>
