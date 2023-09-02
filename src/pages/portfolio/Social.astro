@@ -1,6 +1,11 @@
 ---
 // import Footer from "../../components/Footer.astro";
 import Nav from "../../components/Nav.astro";
+
+import { Image } from "astro:assets";
+
+import instagram_results from "/src/assets/images/portfolio/social/results.png";
+
 ---
 <Nav />
 
@@ -35,7 +40,7 @@ import Nav from "../../components/Nav.astro";
 
 
         <div id="right">
-            <img src="/src/assets/images/portfolio/social/results.png" alt="Instagram Account" height="720px">
+            <Image src={instagram_results} alt="Instagram Account" height={720}>
 
         </div>
 

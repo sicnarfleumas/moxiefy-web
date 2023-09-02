@@ -4,6 +4,11 @@ import Nav from "../../components/Nav.astro";
 
 import '@fontsource/barlow';
 
+import { Image } from 'astro:assets';
+
+import left from '/src/assets/images/portfolio/brand/left.png'
+import right from '/src/assets/images/portfolio/brand/right.png'
+
 
 ---
 <Nav />
@@ -27,7 +32,7 @@ import '@fontsource/barlow';
         <div id="left">
             <div id="top">
 
-                <img src="/src/assets/images/portfolio/brand/left.png" alt="Instagram Account" height="420px">
+                <Image src={left} alt="Instagram Account" height={420} /> 
             
             </div>
 
@@ -43,7 +48,7 @@ import '@fontsource/barlow';
 
             <div id="top">
 
-                <img src="/src/assets/images/portfolio/brand/right.png" alt="Instagram Account" height="320px">
+                <Image src={right} alt="Instagram Account" height={320} />
             </div>
 
             <div id="bottom">
