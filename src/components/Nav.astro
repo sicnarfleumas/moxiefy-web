@@ -1,0 +1,98 @@
+---
+import '../styles/global.css'
+import '@fontsource/barlow-condensed';
+
+    
+import { Image } from 'astro:assets';
+
+
+import facebook from "../assets/images/social-icons/facebook.png"
+import instagram from "../assets/images/social-icons/instagram.png"
+import linkedin from "../assets/images/social-icons/linkedin.png"
+
+
+---
+
+<nav id="Nav">
+    <a class="logo" href="/"><h6>moxie<span>fy</span></h6></a>
+        <ul>
+            <a href="/#About"><li>About</li></a>            
+            <a href="/#Services"><li>Services</li></a>            
+            <a href="/#Portfolio"><li>Portfolio</li></a>            
+            <a href="/#Blog"><li>Blog</li></a>            
+            <a href="/#Contact"><li>Contact</li></a>
+        </ul>
+        
+        <div class="socials">
+            <Image class="icons" src={facebook} alt="Facebook logo" />
+            <Image class="icons" src={instagram} alt="Instagram logo" />
+            <Image class="icons" src={linkedin} alt="LinkedIn logo" />
+
+        </div>
+           
+        
+</nav>
+
+<style>
+
+    html {
+		overflow-x: hidden;
+    }
+
+    nav {
+        align-items: center;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        
+
+        border-style: solid;
+        border-color: #B6E851;
+        border-left: none;
+        border-right: none;
+        
+        margin-top: 2rem;
+        margin-right: -1%;
+        margin-left: -1%;
+    }
+
+    h6 {
+        font-family: 'Architype Bayer-type W90', sans-serif;
+        font-size: 32.5px;
+        font-weight: 500;
+        color: #6D549E;
+    }
+    
+    ul {
+        display: flex;
+        gap: 3rem;
+        padding: 2.5rem 2.5rem;
+    }
+    
+    li {
+        display: inline-block;
+        list-style: none;
+
+        font-size: 22.6px;
+        font-family: 'Barlow Condensed', sans-serif;
+        text-transform: uppercase;
+
+        color: #6D549E;
+    } 
+
+    .socials {
+        display: flex;
+        gap: .75rem;
+    }
+
+    .icons {
+        height: 2rem;
+        width: auto;
+    }
+
+    
+
+
+</style>

@@ -1,0 +1,52 @@
+---
+import '@fontsource/barlow';
+
+import { Image } from 'astro:assets';
+
+import butterfly from '../assets/images/hero/butterfly.svg'
+---
+
+<div class="Hero">
+  <h1 class="top">Bold ideas <br>need <br>fearless <br>execution.</h1>
+    <Image src={butterfly} alt="Glossy butterfly" />
+    <h2 class="bottom">Creative <br>Marketing <br>Solutions for <br>the Bold New <br>World.</h2>
+</div>
+
+<style>
+
+  @font-face {
+    font-family: 'TAN - Angleton Regular';
+    src: url('/fonts/TAN - Angleton Regular.ttf') format('TrueType');
+  }
+
+  .Hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 15%;
+    height: 75vh;
+  }
+
+  .Hero > h1 {
+        font-family: 'TAN - Angleton Regular', sans-serif;
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: #B6E851;
+        line-height: 130%;
+        margin-bottom: 18%;
+
+        text-align: left;
+    }
+
+    .Hero > h2 {
+        font-family: 'Barlow', sans-serif;
+        font-size: 1.75rem;
+        font-weight: 400;
+        color: #6D549E;
+
+        margin-top: 35%;
+        margin-right: 10%;
+    }
+</style>

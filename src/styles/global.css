@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'Architype Bayer-type W90';
+  src: url('/fonts/Architype Bayer-type W90.woff') format('woff');
+}
+
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  padding: 5% 15%;
+
+  gap: 3rem;
+}
+
+
+
+
+h1 {
+  font-family: 'Barlow', sans-serif;
+  font-weight: bold;
+  color: #6D549E;
+  text-transform: uppercase;
+  text-align: right;
+  font-size: 3.5rem;
+
+}
+
+h1 > span {
+  border-bottom: solid .35rem #B6E851;
+}
+
+h6 > span {
+  text-decoration: none;
+  color: #B6E851;
+}
+
+h2 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 2.625rem;
+  color: #B6E851;
+  text-transform: uppercase;
+
+  font-weight: bold;
+}
+
+h3 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 2.375rem;
+  font-weight: bold;
+  color: #6D549E;
+  text-transform: uppercase;
+
+  line-height: 3;
+}
+
+p {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: #6D549E;
+
+  line-height: 1.25;
+}
+
+a {
+  text-decoration: none;
+}
