@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+
+import Nav from "../components/Nav.astro";
+import MainLayout from "./MainLayout.astro";
+
+const {frontmatter} = Astro.props;
+
+const {title, description, date, author, image} = frontmatter;
+---
+
+<MainLayout {title} {description}>
+
+  <Nav />
+  <main>
+    <Image src={image.url} alt={image.alt}
+    width={1200} height={700}
+    />
+    <slot/>
+
+  </main>
+      
+  </MainLayout>
+
+  <style>
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: center;
+      padding: 5% 15%;
+    }
+
+
+  </style>

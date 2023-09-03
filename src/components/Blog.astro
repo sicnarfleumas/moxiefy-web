@@ -1,7 +1,15 @@
 ---
+const allPosts = await Astro.glob('../pages/posts/*.md')
+
+// Import Components
+import PostCard from '../components/PostCard.astro'
+
 
 ---
 
-<section>
+<section id="Blog">
   <h1><span>Blo</span>g</h1>
+
+  {allPosts.map((post) => <PostCard {post} />  )}
+
 </section>

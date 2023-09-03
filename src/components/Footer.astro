@@ -1,0 +1,182 @@
+---
+// Import Fonts
+import '@fontsource/barlow';
+import '@fontsource/barlow-condensed';
+
+// Import Utility functions
+import { Image } from 'astro:assets';
+
+// Import Images
+import facebook from "../assets/images/social-icons/facebook_white.png"
+import instagram from "../assets/images/social-icons/instagram_white.png"
+import linkedin from "../assets/images/social-icons/linkedin_white.png"
+---
+
+<div class="Footer">
+  <div class="top">
+    <div class="left">
+      <strong>FOLLOW #MOXIEFY</strong>
+      <div class="socials">
+        <a href="https://www.facebook.com/people/Moxiefy/61550828314507/" target="_blank">
+          <Image class="icons" src={facebook} alt="Facebook logo" />
+        </a>
+        <a href="https://www.instagram.com/moxiefy.co/" target="_blank">
+            <Image class="icons" src={instagram} alt="Instagram logo" />
+        </a>
+        <a href="https://www.linkedin.com/company/moxiefydigital" target="_blank">
+            <Image class="icons" src={linkedin} alt="LinkedIn logo" />
+        </a>
+      </div>
+    </div>
+    <div class="right">
+      <form action="/">
+        <label for="email">newsletter</label>
+        <div class="form-container">
+          <input type="email" id="email" name="email" placeholder="Email" required />
+          <button type="submit">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="bottom">
+    <nav class="Navigation" id="Navigation">
+          <ul>
+              <a href="/"><li>Home</li></a>
+              <a href="/#About"><li>About</li></a>            
+              <a href="/#Services"><li>Services</li></a>            
+              <a href="/#Portfolio"><li>Portfolio</li></a>            
+              <a href="/#Blog"><li>Blog</li></a>            
+              <a href="/#Contact"><li>Contact</li></a>
+          </ul>
+    </nav>
+  </div>
+</div>
+
+<style>
+  html {
+    overflow-x: hidden;
+  }
+.Footer {
+    background-color: #6D549E;
+    color: #fff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 18rem;
+  align-items: center;
+
+  padding-bottom: 3rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 1rem;
+}
+
+label {
+  font-family: 'barlow-condensed', sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #fff;
+  padding-right: 1rem;
+}
+
+input {
+  background-color: #fff;
+  color: #6D549E;
+  border-left: solid 1px #6D549E;
+  border: none;
+  border-right: solid 1px #6D549E;
+  padding: 0.5rem 1rem;
+  font-family: 'barlow-condensed', sans-serif;
+  font-size: .75rem;
+  width: 15rem;
+  cursor: pointer;
+}
+
+button {
+  background-color: #fff;
+  color: #6D549E;
+  border-left: solid 1px #6D549E;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-family: 'barlow-condensed', sans-serif;
+  font-size: .75rem;
+  cursor: pointer;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 1rem;
+  width: 50%;
+}
+
+
+  .icons {
+    height: 2rem;
+    width: auto;
+    align-items:  left;
+    justify-content: left;
+}
+
+strong {
+  font-family: 'barlow-condensed', sans-serif;
+  font-size: 1.5rem;
+
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  gap: 2rem;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  border-top: solid 1px #fff;
+
+}
+
+ul {
+    display: flex;
+    gap: 5rem;
+    padding: 4rem 0 3rem 0;
+
+}
+
+li {
+    display: inline-block;
+    
+    list-style: none;
+    
+
+    font-size: 1.72rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+</style>
