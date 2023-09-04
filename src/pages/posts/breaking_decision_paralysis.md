@@ -15,7 +15,10 @@ draft: true
 ---
 
 # Breaking Decision Paralysis: Helping Your Customers Make Confident Choices
-As a brand, your goal is to provide your customers with the best possible choices to meet their needs. However, when faced with an overwhelming array of options, customers may face what is called decision paralysis, which is an inability to make a choice out of fear of making the incorrect choice. This may lead customers to become frustrated, indecisive and even lead to loss of sales. As a business, it is important for you to recognize the impact of too much choice on your customers and take steps to simplify the decision-making process. Here are 5 simple strategies to help your customers make confident, informed purchase decisions: 
+![ShoppingCart in an aisle of a super market](/src/assets/images/blog/1_Decision_Paralysis/Header.jpg)
+
+As a brand, your goal is to provide your customers with the best possible choices to meet their needs. However, when faced with an overwhelming array of options, customers may face what is called decision paralysis, which is an inability to make a choice out of fear of making the incorrect choice. This may lead customers to become frustrated, indecisive and even lead to loss of sales. As a business, it is important for you to recognize the impact of too much choice on your customers and take steps to simplify the decision-making process. Here are 5 simple strategies to help your customers make confident, informed purchase decisions:
+
 
 ## 1. Curation and Simplification
 The first step towards breaking decision paralysis is to reduce the number of options you offer within a segment. Customers are more likely to make decisions when presented with a limited number of relevant choices. Consider improving your site's search function to quickly filter down search results or use artificial intelligence to display the options that are most relevant to the user's preferences.
