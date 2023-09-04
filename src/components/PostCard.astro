@@ -1,12 +1,14 @@
 ---
 const { post} = Astro.props;
 
-const { title, image, description, url } = post.frontmatter;
+const { title, image, description, url} = post.frontmatter;
 ---
 <div class="post-card">
 
   <div class="left">
-    <h1>{title}</h1>
+        
+    
+    <h1> <a href={post.url}>  {title} </a> </h1>
     <p>{description}...<span><a href={post.url}>Read more</a></span></p>
   </div>
   
@@ -40,6 +42,8 @@ const { title, image, description, url } = post.frontmatter;
     color: #B6E851;
 
     width: 40ch;
+
+    line-height: 1.25;
   }
 
   .left > p {
@@ -59,6 +63,11 @@ const { title, image, description, url } = post.frontmatter;
     width: 100%;
     height: 15rem;
     object-fit: cover;
+  }
+
+  a:visited{
+    text-decoration: none;
+    color: inherit;
   }
 </style>
 

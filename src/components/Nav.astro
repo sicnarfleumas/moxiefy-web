@@ -1,11 +1,14 @@
 ---
-import '../styles/global.css'
+
+// Import Fonts
 import '@fontsource/barlow-condensed';
 
-    
+
+
+// Import utility
 import { Image } from 'astro:assets';
 
-
+// Impot Images
 import facebook from "../assets/images/social-icons/facebook.png"
 import instagram from "../assets/images/social-icons/instagram.png"
 import linkedin from "../assets/images/social-icons/linkedin.png"
@@ -40,7 +43,10 @@ import linkedin from "../assets/images/social-icons/linkedin.png"
 </nav>
 
 <style>
-
+@font-face {
+  font-family: 'Architype Bayer-type W90';
+  src: url('/fonts/Architype Bayer-type W90.woff') format('woff');
+}
 
 
 nav {
@@ -86,6 +92,17 @@ li {
 .icons {
     height: 2rem;
     width: auto;
+}
+
+
+h6 > span {
+  text-decoration: none;
+  color: #B6E851;
+}
+
+a {
+    text-decoration: none;
+    color: #6D549E;
 }
 
 

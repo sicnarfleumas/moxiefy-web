@@ -10,65 +10,49 @@
 
 }
 
-section {
+main {
   display: flex;
   flex-direction: column;
-  padding: 5% 15%;
+  padding: 5% 17%;
 
   gap: 3rem;
 }
 
-
-
-
 h1 {
   font-family: 'Barlow Condensed', sans-serif;
-  font-weight: bold;
+  font-weight: 900;
   color: #6D549E;
   text-transform: uppercase;
   text-align: left;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
+  line-height: 2;
+
 
 }
 
-h1 > span {
-  border-bottom: solid .35rem #B6E851;
-}
 
 h2 {
   font-family: 'Barlow', sans-serif;
-  font-size: 2.625rem;
-  color: #B6E851;
+  font-size: 2rem;
+  color: #6D549E;
   text-transform: uppercase;
 
+  font-weight: 800;
+  line-height: 2;
 
-  font-weight: bold;
-}
-
-h3 {
-  font-family: 'Barlow', sans-serif;
-  font-size: 2.375rem;
-  font-weight: bold;
-  color: #6D549E;
-
-  line-height: 3; 
 }
 
 p {
   font-family: 'Barlow', sans-serif;
   font-weight: 500;
-  font-size: 2.5rem;
-  color: #6D549E;
+  font-size: 1.5rem;
+  color: black;
 
-  line-height: 1.25;
-}
-
-a {
-  text-decoration: none;
+  line-height: 2;
 }
 
 @media only screen and (max-width: 600px) {
-  section{
+  main {
     padding: 5% 5%;
   }
 
@@ -78,10 +62,6 @@ a {
 
   h2 {
     font-size: 2rem;
-  }
-
-  h3 {
-    font-size: 1.75rem;
   }
 
   p {

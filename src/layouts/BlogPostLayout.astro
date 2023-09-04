@@ -1,35 +1,62 @@
 ---
+// Utilities
 import { Image } from "astro:assets";
+import { ViewTransitions } from "astro:transitions";
 
+// Import Fonts
+import '@fontsource/barlow-condensed';
+import '@fontsource/barlow';
+
+
+// Components
 import Nav from "../components/Nav.astro";
-import MainLayout from "./MainLayout.astro";
+import Footer from "../components/Footer.astro";
 
+// Styles
+import '../styles/blog.css';
+
+
+
+// Frontmatter
 const {frontmatter} = Astro.props;
 
-const {title, description, date, author, image} = frontmatter;
+const {title, description, image} = frontmatter;
 ---
 
-<MainLayout {title} {description}>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+		<title>{title}</title>
 
-  <Nav />
-  <main>
-    <Image src={image.url} alt={image.alt}
-    width={1200} height={700}
-    />
-    <slot/>
+	<ViewTransitions />
 
-  </main>
-      
-  </MainLayout>
+	</head>
 
-  <style>
-    main {
-      display: flex;
-      flex-direction: column;
-      align-items: left;
-      justify-content: center;
-      padding: 5% 15%;
-    }
+  <body>
+
+		<Nav />
+
+    <main>
+      <article>
+        <slot/>
+      </article>
+
+    </main>
+
+    <Footer />  
+
+	</body>
+  
+</html>
+
+<style>
+
+  
 
 
-  </style>
+
+</style>

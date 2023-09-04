@@ -1,4 +1,8 @@
 ---
+// Import Utilities
+
+
+
 // Import Fonts
 import '@fontsource/barlow-condensed';
 import '@fontsource/barlow';
@@ -19,27 +23,27 @@ import Footer from '../components/Footer.astro';
 
 // Import Layout
 import MainLayout from "../layouts/MainLayout.astro";
-
+// Import styles
+import '../styles/global.css';
 ---
 
 <MainLayout title="Moxiefy" description="Branding Solutions">
+	<Nav client:load />
 
-	<Nav />
-
-	<Hero />
+	<Hero client:idle />
 	
-	<About />
+	<About client:visible  />
 
-	<Services />
+	<Services client:visible  />
 
-	<CTA />
+	<CTA client:visible  />
 
-	<Portfolio />
+	<Portfolio client:visible  />
 
-	<Blog />
+	<Blog client:visible  />
 
-	<Contact />
+	<Contact client:visible  />
 
-	<Footer />
+	<Footer client:visible  />
 
 </MainLayout>
