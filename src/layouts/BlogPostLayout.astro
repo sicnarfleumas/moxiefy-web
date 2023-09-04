@@ -1,7 +1,9 @@
 ---
 // Utilities
-import { Image } from "astro:assets";
 import { ViewTransitions } from "astro:transitions";
+
+import { Image } from "astro:assets";
+
 
 // Import Fonts
 import '@fontsource/barlow-condensed';
@@ -20,19 +22,19 @@ import '../styles/blog.css';
 // Frontmatter
 const {frontmatter} = Astro.props;
 
-const {title, description, image} = frontmatter;
+const { title, description, image } = frontmatter;
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
 		<title>{title}</title>
 
-	<ViewTransitions />
+		<ViewTransitions />
 
 	</head>
 
@@ -42,7 +44,16 @@ const {title, description, image} = frontmatter;
 
     <main>
       <article>
-        <slot/>
+				<h1 transition:name="blog_title">{title}</h1>
+				<Image 
+				class="blog-image" 
+				src={image.src}
+				alt={image.alt}
+				width={image.width}
+				height={image.height}
+				transition:name="blog-image"
+				/>
+        <slot />
       </article>
 
     </main>
@@ -54,9 +65,8 @@ const {title, description, image} = frontmatter;
 </html>
 
 <style>
-
-  
-
-
-
+	.blog-image {
+		width: 100%;
+		height: auto;
+	}
 </style>

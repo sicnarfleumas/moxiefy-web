@@ -1,10 +1,11 @@
 ---
+// Import utilities
 import { ViewTransitions } from "astro:transitions";
 
 // Import styles
 import '../styles/global.css';
 
-
+// Astro props
 const {
   title = "Default title",
   description = "Default description",
@@ -13,15 +14,16 @@ const {
 ---
 
 <html lang="en">
+
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
 		<title>{title}</title>
 
-	<ViewTransitions />
+		<ViewTransitions />
 
 	</head>
 	<body>

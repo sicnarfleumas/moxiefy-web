@@ -4,20 +4,14 @@ title: Breaking Decision Paralysis - Helping Your Customers Make Confident Choic
 author: Shivani Bhat
 description: "Unlocking Confident Choices: Break Free from Decision Paralysis with 5 Essential Strategies for Your Business. Don't let decision paralysis hold your customers back! Discover how to empower them with informed choices using these 5 proven strategies."
 image:
-  url: "/src/assets/images/blog/1_Decision_Paralysis/Header.jpg"
   src: "/src/assets/images/blog/1_Decision_Paralysis/Header.jpg"
   alt: "Shopping card in an aisle of a supermarket."
+  width: 100%
+  height: 920px
   
 pubDate: 2023-09-02
-
 draft: true
-
 ---
-
-# Breaking Decision Paralysis: Helping Your Customers Make Confident Choices
-![ShoppingCart in an aisle of a super market](/src/assets/images/blog/1_Decision_Paralysis/Header.jpg#header)
-
-
 As a brand, your goal is to provide your customers with the best possible choices to meet their needs. However, when faced with an overwhelming array of options, customers may face what is called decision paralysis, which is an inability to make a choice out of fear of making the incorrect choice. This may lead customers to become frustrated, indecisive and even lead to loss of sales. As a business, it is important for you to recognize the impact of too much choice on your customers and take steps to simplify the decision-making process. Here are 5 simple strategies to help your customers make confident, informed purchase decisions:
 
 

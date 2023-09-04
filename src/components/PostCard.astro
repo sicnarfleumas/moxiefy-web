@@ -1,21 +1,34 @@
 ---
+// Import Utility
+import { Image } from "astro:assets";
+
+
 const { post} = Astro.props;
 
-const { title, image, description, url} = post.frontmatter;
+const { title, image, description, url } = post.frontmatter;
 ---
 <div class="post-card">
 
   <div class="left">
-        
     
-    <h1> <a href={post.url}>  {title} </a> </h1>
+    <h1 transition:name="blog_title"> <a href={post.url}>  {title} </a> </h1>
+
     <p>{description}...<span><a href={post.url}>Read more</a></span></p>
   </div>
   
   <div class="right">
+
     <a href={post.url}>
-      <img src={image.src} alt={image.alt} />
-    </a>
+      <Image
+      class="post-image" 
+      src={image.src} 
+      alt={image.alt}
+      width={image.width}
+      height={image.height}      
+      
+      transition:name="blog-image"
+      />
+      
   </div>
 
 </div>
@@ -59,10 +72,9 @@ const { title, image, description, url} = post.frontmatter;
     text-decoration: underline;
   }
 
-  img {
+  .post-image {
     width: 100%;
     height: 15rem;
-    object-fit: cover;
   }
 
   a:visited{
