@@ -4,7 +4,7 @@ title: Breaking Decision Paralysis - Helping Your Customers Make Confident Choic
 author: Shivani Bhat
 description: "Unlocking Confident Choices: Break Free from Decision Paralysis with 5 Essential Strategies for Your Business. Don't let decision paralysis hold your customers back! Discover how to empower them with informed choices using these 5 proven strategies."
 image:
-  src: '../../assets/images/blog/1_Decision_Paralysis/Header.jpg'
+  src: '/src/assets/images/blog/1_Decision_Paralysis/Header.jpg'
   alt: "Shopping card in an aisle of a supermarket."
   width: 100%
   height: 920px
