@@ -5,6 +5,10 @@ import { ViewTransitions } from "astro:transitions";
 // Import styles
 import '../styles/global.css';
 
+// Import components
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+
 // Astro props
 const {
   title = "Default title",
@@ -27,10 +31,10 @@ const {
 
 	</head>
 	<body>
-
+		<Nav/>
 		<slot>
       Default content
     </slot>
-
+		<Footer />
 	</body>
 </html>

@@ -1,17 +1,24 @@
 ---
-// import Footer from "../../components/Footer.astro";
-import Nav from "../../components/Nav.astro";
 
+
+// Import Fonts
 import '@fontsource/barlow';
 
+// Import Utilities
 import { Image } from 'astro:assets';
 
+// Import Images
 import left from '/src/assets/images/portfolio/brand/left.png'
 import right from '/src/assets/images/portfolio/brand/right.png'
 
+// Import Layouts
+import MainLayout from "../../layouts/MainLayout.astro";
+
 
 ---
-<Nav />
+<MainLayout 
+    title="Communicating Value Through Brand Proposition"
+    description="">
 
 
 <section>
@@ -61,8 +68,7 @@ import right from '/src/assets/images/portfolio/brand/right.png'
     
 </section>
 
-<!-- <Footer /> -->
-
+</MainLayout>
 
 <style>
 

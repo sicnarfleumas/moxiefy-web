@@ -1,13 +1,20 @@
 ---
-// import Footer from "../../components/Footer.astro";
-import Nav from "../../components/Nav.astro";
 
+
+// Import Utilities
 import { Image } from "astro:assets";
 
+// Import Images
 import instagram_results from "/src/assets/images/portfolio/social/results.png";
 
+// Import Layout
+import MainLayout from "../../layouts/MainLayout.astro";
+
 ---
-<Nav />
+<MainLayout
+    title="Social Media Content Development"
+    description="">
+
 
 <section>
     <h1>social media <span>content Development</span></h1>
@@ -48,7 +55,9 @@ import instagram_results from "/src/assets/images/portfolio/social/results.png";
    
 </section>
 
-<!-- <Footer /> -->
+
+</MainLayout>
+
 <style>
     h3 {
         font-family: 'Barlow', sans-serif;

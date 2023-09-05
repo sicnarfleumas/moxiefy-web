@@ -1,52 +1,58 @@
 ---
 
-import Nav from "../../components/Nav.astro";
-
+// Import Utilities
 import { Image } from 'astro:assets';
 
+
+// Import Images
 import Ad1 from "/src/assets/images/portfolio/ads/Meta1.png"
 import Ad2 from "/src/assets/images/portfolio/ads/Meta2.png"
 import Ad3 from "/src/assets/images/portfolio/ads/Meta3.png"
 
-
+// Import Layout
+import MainLayout from "../../layouts/MainLayout.astro";
 
 ---
-<Nav />
+<MainLayout 
+    title="BOOSTING AD PERFORMANCE WITH CAPTIVATING CREATIVES"
+    description="Design ad creatives for a traffic campaign to be run across Facebook, Messenger and Instagram.">
 
 
-<section>
 
+    <section>
+
+        
+        <h1>Boosting AD Performance <span>with captivating</span> creatives</h1>
     
-    <h1>Boosting AD Performance <span>with captivating</span> creatives</h1>
-   
-    <h2>The Project Proposal</h2>
-    <p>Design ad creatives for a traffic campaign to be run across Facebook, Messenger and Instagram.</p>
+        <h2>The Project Proposal</h2>
+        <p>Design ad creatives for a traffic campaign to be run across Facebook, Messenger and Instagram.</p>
 
-    <h2>The Creative Process</h2>
-    <p>Chalo India World focuses on three aspects of promoting Indian tourism- destinations, festivals and adventures. A carousel ad format was chosen as it would be able to highlight each of these, appealing to the different target audiences, and enable adding separate links to each page.  
+        <h2>The Creative Process</h2>
+        <p>Chalo India World focuses on three aspects of promoting Indian tourism- destinations, festivals and adventures. A carousel ad format was chosen as it would be able to highlight each of these, appealing to the different target audiences, and enable adding separate links to each page.  
 
-        Bold and bright hues were used in the creatives as well as popular and recognizable images such as Rajasthan's Hawa Mahal and the Pushkar Camel Festival. The torn image aesthetic was used as a way to draw attention, evoke curiosity, and encourage the audience to visit the website to reveal the "hidden parts" of India. </p>
+            Bold and bright hues were used in the creatives as well as popular and recognizable images such as Rajasthan's Hawa Mahal and the Pushkar Camel Festival. The torn image aesthetic was used as a way to draw attention, evoke curiosity, and encourage the audience to visit the website to reveal the "hidden parts" of India. </p>
 
-    
+        
 
 
-</section>
+    </section>
 
-<div class="imgholder">
+    <div class="imgholder">
 
-    <Image src={Ad1} alt="Captivating Destinations" class="Image" />
-    <Image src={Ad2} alt="Exuberant Festivals" class="Image"/>
-    <Image src={Ad3} alt="Electrifying Adventures" class="Image"/>
+        <Image src={Ad1} alt="Captivating Destinations" class="Image" />
+        <Image src={Ad2} alt="Exuberant Festivals" class="Image"/>
+        <Image src={Ad3} alt="Electrifying Adventures" class="Image"/>
 
 
-</div>
+    </div>
 
-<section>
-    <h2>Result</h2>
-    <p>Compared to the previous traffic campaign, this campaign run with the redesigned creatives for the same duration and with identical parameters, achieved a greater number of link clicks at a lower cost per link click. The reach was higher as was the engagement rate. </p>
+    <section>
+        <h2>Result</h2>
+        <p>Compared to the previous traffic campaign, this campaign run with the redesigned creatives for the same duration and with identical parameters, achieved a greater number of link clicks at a lower cost per link click. The reach was higher as was the engagement rate. </p>
 
-</section>
+    </section>
 
+</MainLayout>
 
 <style>
 
