@@ -1,4 +1,5 @@
 ---
+
 // Import Utilities
 import { Image } from 'astro:assets';
 
@@ -7,21 +8,22 @@ import Ads from "/src/assets/images/portfolio/banner/Portfolio1.png";
 import Design from "/src/assets/images/portfolio/banner/Portfolio3.png";
 import Branding from "/src/assets/images/portfolio/banner/Portfolio2.png";
 import Social from "/src/assets/images/portfolio/banner/Portfolio4.png";
+
 ---
 
 <section class="Portfolio" id="Portfolio">
   <div><h1>Portf<span>olio</span></h1></div>
   <div class="img-holder">
-      <a href='portfolio/ads'>
+      <a href='/portfolio/ads'>
         <Image src={Ads} alt="Ads Portfolio">
       </a>
-      <a href="portfolio/design">
+      <a href="/portfolio/design">
         <Image src={Design} alt="Design Portfolio" />
       </a>
-      <a href="portfolio/brand">
+      <a href="/portfolio/brand">
         <Image src={Branding} alt="Branding Portfolio" />
       </a>
-      <a href="portfolio/social">
+      <a href="/portfolio/social">
         <Image src={Social} alt="Social Media Portfolio" />
       </a>
   </div>
