@@ -1,23 +1,35 @@
 ---
-// Import Fonts
-import '@fontsource/barlow';
+
 
 // Import Utilities
 import { Image } from 'astro:assets';
 
 // Import Images
 import butterfly from '../assets/images/hero/butterfly.svg'
+
+// Import Components
+import CTA from './buttons/CTA.astro';
 ---
 
 <div class="Hero">
-  <h1 class="top">Bold ideas <br>need <br>fearless <br>execution.</h1>
-    <Image 
-    src={butterfly} 
-    alt="Glossy butterfly"
-    
-    format="avif"
+
+  <div class="left">
+    <h1>Bold ideas <br>need <br>fearless <br>execution.</h1>
+    <CTA cta = "CONNECT"/>
+  </div>
+
+    <div class="midd">
+      <Image 
+        src={butterfly} 
+        alt="Glossy butterfly"
+        format="avif"
     />
-    <h2 class="bottom">Creative <br>Marketing <br>Solutions for <br>the Bold New <br>World.</h2>
+    </div>
+
+    <div class="right">
+      <h2 class="bottom">Creative <br>Marketing <br>Solutions for <br>the Bold New <br>World.</h2>
+    </div>
+    
 </div>
 
 <style>
@@ -30,33 +42,41 @@ import butterfly from '../assets/images/hero/butterfly.svg'
   .Hero {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
 
-    padding: 0 15%;
     height: 75vh;
+    padding-top: 2%;
   }
 
-  .Hero > h1 {
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .left > h1 {
         font-family: 'TAN - Angleton Regular', sans-serif;
-        font-size: 2rem;
+        font-size: 2.5rem;
         text-transform: uppercase;
         color: #B6E851;
         line-height: 130%;
-        margin-bottom: 18%;
-        width: 100%;
+        
+        margin-bottom: 15%;
 
     }
 
-    .Hero > h2 {
+    .right {
+      margin-top: 25%;
+    }
+
+    .right > h2 {
         font-family: 'Barlow', sans-serif;
         font-size: 1.75rem;
         font-weight: 400;
         color: #6D549E;
 
-        margin-top: 35%;
         line-height: 1.2;
-        width: 100%;
     }
 
 

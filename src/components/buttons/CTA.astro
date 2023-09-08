@@ -1,9 +1,11 @@
 ---
-
+const {
+    cta = "GET IN TOUCH!",
+    } = Astro.props;
 ---
 
 <button class="button type1" onclick=window.location.href="#Contact">
-    <span class="btn-txt">GET IN TOUCH</span>
+    <span class="btn-txt">{cta}</span>
   </button>
 
 
