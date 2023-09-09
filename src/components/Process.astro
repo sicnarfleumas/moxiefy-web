@@ -1,0 +1,210 @@
+---
+// Import utilities
+import { Image } from "astro:assets";
+
+// Import images
+import folder from "../assets/images/process/1.png";
+import bulb from "../assets/images/process/2.png";
+import message from "../assets/images/process/3.png";
+import bell from "../assets/images/process/4.png";
+import paper from "../assets/images/process/5.png";
+import divider from "../assets/images/process/divider.png";
+import down_arrow from "../assets/images/process/arrow.png";
+---
+
+<section class="process">
+  <div class="top">
+    <h2>discover the 5-step moxiefy process</h2>
+    <Image
+    src={down_arrow}
+    alt="down arrow"
+    class="down-arrow"
+    />
+  </div>
+
+  <div class="container">
+
+    <div class="text">
+      <h3>research and strategy formation</h3>
+      <p>Setting up a meeting to understand client requirements, objectives and goals in order to develop a customised strategy. Conducting market research to analyze the industry, competitors, target group and identify trends.</p>
+    </div>
+    <div class="img">
+        <Image 
+          src={folder} 
+          alt="folder icon"
+          class="icon icon-right"
+        />
+    </div>
+    
+  </div>
+  <Image 
+  src={divider}
+  alt="divider"
+  class="divider"
+  width={1000}
+  />
+  <div class="container">
+
+    <div class="img">
+      <Image 
+        src={bulb} 
+        alt="folder icon"
+        class="icon icon-left"
+      />
+  </div>
+
+    <div class="text left-align">
+      <h3>ideation and creative concepT development</h3>
+      <p>Developing compelling and unique creative concepts that align with the startegy approved by the client. Presenting the client with the creative concepts, getting feedback and refining concepts.</p>
+    </div>
+    
+  </div>
+
+  <Image 
+  src={divider}
+  alt="divider"
+  class="divider-flip"
+  width={1000}
+  />
+
+  <div class="container">
+    <div class="text">
+      <h3>Content creation and development </h3>
+      <p>Producing high quality content and design assets based on the approved concepts, and aligning them with the client’s brand guidelines and industry standards.</p>
+    </div>
+    <div class="img">
+        <Image 
+          src={message} 
+          alt="folder icon"
+          class="icon icon-right"
+        />
+    </div>
+  </div>
+
+  <Image 
+  src={divider}
+  alt="divider-flip"
+  class="divider"
+  width={1000}
+  />
+
+  <div class="container">
+
+    <div class="img">
+      <Image 
+        src={bell}
+        alt="folder icon"
+        class="icon icon-left"
+      />
+  </div>
+
+    <div class="text left-align">
+      <h3>Implementation and promotion</h3>
+      <p>Deploying the content and deisgn assets across required platforms and channels. Measure the effectiveness, make data-driven adjustments to optimise the content and design strategy for better results.</p>
+    </div>
+    
+  </div>
+
+  <Image 
+  src={divider}
+  alt="divider"
+  class="divider-flip"
+  width={1000}
+  />
+
+  <div class="container">
+
+    <div class="text">
+      <h3>Reporting and analysis</h3>
+      <p>Generating reports detailing performance metrics and insights. Getting client feedback and planning future campaigns or projects.</p>
+    </div>
+
+    <div class="img">
+        <Image 
+          src={paper} 
+          alt="folder icon"
+          class="icon icon-right"
+        />
+    </div>
+  </div>
+</section>
+
+<style>
+
+  section {
+
+    padding: 0 5 0 5;
+    gap: .1rem;
+
+    background-image: 
+    linear-gradient(to bottom, #9140C1 0%, #a75ad3 74% 125%, #A85BD3 104% 107%);
+
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+    gap: 1rem;
+  }
+
+  h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -1rem 0 0;
+  }
+
+
+  h3 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    color: white;
+  }
+
+  .left-align{
+    text-align: right;
+  }
+
+  p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: white;
+    width: 60ch;
+  }
+
+  .icon {
+    width: 80%;
+    height: 50%;
+  }
+
+  .divider-flip {
+    transform: scaleX(-1);
+  }
+
+  .icon-left {
+    margin-left: -6rem;
+  }
+
+  .icon-right {
+    margin-left: 2rem;
+  }
+
+  .down-arrow {
+    width:  6%;
+    height: 6%;
+  }
+</style>
