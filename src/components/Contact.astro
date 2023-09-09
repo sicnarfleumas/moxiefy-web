@@ -11,11 +11,11 @@ import Submit from "./buttons/Submit.astro";
     </div>
 
     <div class="Form">
-        <form name="contact" method="POST">
+        <form name="contact" method="POST" data-netlify="true">
           <div class="Form-wrap">
-            <input type="text"  id="Name" placeholder="Name" required>
-            <input type="email" id="Email" placeholder="E-mail" required>
-            <textarea name="" id="Message" cols="30" rows="5" placeholder="Message"></textarea>
+            <input name="name" type="text"  id="Name" placeholder="Name" required>
+            <input name="email" type="email" id="Email" placeholder="E-mail" required>
+            <textarea name="message" name="" id="Message" cols="30" rows="5" placeholder="Message"></textarea>
           </div>
             <Submit message="SUBMIT" />
         </form>
