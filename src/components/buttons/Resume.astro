@@ -3,31 +3,34 @@
 ---
 
 <button class="button type1" onclick="window.open('/src/assets/Resume.pdf')">
-    <span class="btn-txt">RESUME</span>
+    <span class="btn-txt">DOWNLOAD CV</span>
   </button>
 
   
 <style>
     
     .button {
-        height: 50px;
-        width: 200px;
+        height: fit-content;
+        width: fit-content;
         position: relative;
         background-color: transparent;
         cursor: pointer;
-        border: 2px solid #6D549E;
+        border: 2px solid #B6E851;
         overflow: hidden;
-        color: #6D549E;
+        color: #B6E851;
         transition: all 0.5s ease-in-out;
+        padding: 1rem 1rem;
 
         
     }
 
     .btn-txt {
-        font-family: 'Barlow', sans-serif;
+        font-size: 1.5rem;
+        font-family: 'Barlow Condensed', sans-serif;
         z-index: 1;
         font-weight: 800;
         letter-spacing: 4px;
+        
     }
 
     .type1::after {
@@ -36,7 +39,7 @@
         left: 0;
         top: 0;
         transition: all 0.5s ease-in-out;
-        background-color: #6D549E;
+        background-color: #B6E851;
         border-radius: 30px;
         visibility: hidden;
         height: 10px;
@@ -45,9 +48,8 @@
     }
 
     .button:hover {
-        box-shadow: 1px 1px 200px #6D549E;
-        color: #fff;
-        border: none;
+        box-shadow: 1px 1px 200px #B6E851;
+        color: #B6E851;
     }
 
     .type1:hover::after {

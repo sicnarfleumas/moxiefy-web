@@ -12,6 +12,8 @@ import linkedin from "../assets/images/social-icons/linkedin.png"
 
 
 ---
+<div class="Nav-Container">
+
 
 <nav id="Nav">
     <a class="logo" href="/"><h6>moxie<span>fy</span></h6></a>
@@ -39,24 +41,26 @@ import linkedin from "../assets/images/social-icons/linkedin.png"
         
 </nav>
 
+</div>
+
 <style>
 @font-face {
   font-family: 'Architype Bayer-type W90';
   src: url('/fonts/Architype Bayer-type W90.woff') format('woff');
 }
 
-
+.Nav-Container {
+    background-color: #6010A9;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 nav {
     align-items: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    border-style: solid;
-    border-color: #B6E851;
-    border-left: none;
-    border-right: none;
-    margin-top: 2rem;
+    background-color: white;
 }
 
 h6 {

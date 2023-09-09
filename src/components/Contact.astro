@@ -1,127 +1,136 @@
 ---
-import Submit from "./buttons/Submit.astro";
+import Submit from './buttons/Submit.astro';
 ---
 
-<section class="Contact" id="Contact">
-    <h1>GET IN TO<span>UCH</span></h1>
-<div class="wrap">
-    <div class="Text">
-        <h2>LET'S CRAFT YOUR NEXT <br>INCREDIBLE PROJECT <br>TOGETHER.</h2>
-        <p>I look forward to collaborating with you on your next project. Reach out with requests, ideas or queries and receive a response within 24 hours.</p>
+<section class="contact" id="contact">
+  <h1>CONT<span>ACT</span></h1>
+  <div class="wrap">
+    <div class="text">
+      <h2>LET'S CRAFT YOUR NEXT <br>INCREDIBLE PROJECT <br>TOGETHER.</h2>
+      <p>
+        I look forward to collaborating with <br>you on your next project. Reach
+        out with <br>requests, ideas, or queries and receive a <br>response within 24
+        hours.
+      </p>
     </div>
 
-    <div class="Form">
-        <form name="contact" method="POST" data-netlify="true">
-          <div class="Form-wrap">
-            <input name="name" type="text"  id="Name" placeholder="Name" required>
-            <input name="email" type="email" id="Email" placeholder="E-mail" required>
-            <textarea name="message" name="" id="Message" cols="30" rows="5" placeholder="Message"></textarea>
-          </div>
-            <Submit message="SUBMIT" />
-        </form>
-
-
+    <div class="form">
+      <form name="contact" method="POST" data-netlify="true">
+        <div class="form-wrap">
+          <input name="name" type="text" id="name" placeholder="Name" required>
+          <input name="email" type="email" id="email" placeholder="E-mail" required>
+          <textarea name="message" id="message" cols="30" rows="5" placeholder="Message"></textarea>
+        </div>
+        <Submit message="SUBMIT" />
+      </form>
     </div>
-
-</div>
-
+  </div>
 </section>
 
 <style>
+  section {
+    background-image: linear-gradient(to bottom, #a75ad3 104% 107%, #6312aa 74% 125%, #8c2ec6 104% 107%);
+  }
 
-  .Contact > h1 {
+  .contact > h1 {
     text-align: right;
   }
 
-  .Text > h2 {
+ h2 {
+    font-family: "Barlow", sans-serif;
+    font-weight: 800;
     font-size: 2rem;
-    font-weight: bold;
-    line-height: 1.25;
-  }
+ }
 
-  .Text > p {
+  p {
+    font-family: "Barlow", sans-serif;
     font-size: 1.5rem;
-    font-weight: 300;
-    width: 28ch;
+    font-weight: 800;
+    line-height: 2rem;
   }
 
-  .Text {
+  .text {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding-top: 1rem;
+    padding-top: 3rem;
   }
-  
+
   .wrap {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-
-        justify-content: space-between;
-
-    }
-
-    .Form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .Form-wrap   {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-
-        border: .05rem solid #B6E851;
-        padding: 1rem;
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-
-        align-items: center;
-    }
-
-    #Message {
-        min-width: 30rem;
-        min-height: 2rem;
-
-        border: none;
-        border: .25rem solid #6D549E;
-        background-color: transparent;
-        color: #B6E851;
-
-        font-family: 'Barlow', sans-serif;
-        font-size: 1.5rem;
-
-        padding: .5rem;
-    }
-
-    #Name, #Email {
-        border: none;
-        border: .25rem solid #6D549E;
-        background-color: transparent;
-        color: #B6E851;
-        font-family: 'Barlow', sans-serif;
-        font-size: 1.5rem;
-        padding: .5rem;
-    }
-
-    #send {
-        font-family: 'Barlow', sans-serif;
-        font-size: 1.5rem;
-
-        width: fit-content;
-        padding: .5rem 1rem .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
 
 
-        border: none;
+  }
 
-        color: white;
-        background-color: #6D549E;
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 
-    }
+  .form-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  #message {
+    min-width: 30rem;
+    min-height: 2rem;
+    border: none;
+    border-bottom: #b6e851 0.2rem solid;
+    border-left: #b6e851 0.2rem solid;
+    background-color: transparent;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  #name, #email {
+    border: none;
+    border-bottom: #b6e851 0.2rem solid;
+    border-left: #b6e851 0.2rem solid;
+    background-color: transparent;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+
+input:focus {
+  background-color: transparent;
+}
+
+textarea:focus {
+  background-color: transparent;
+}
+
+
+  input::placeholder {
+
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  textarea::placeholder {
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
 </style>
