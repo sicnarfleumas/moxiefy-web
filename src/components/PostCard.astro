@@ -3,34 +3,38 @@
 import { Image } from "astro:assets";
 
 
-const { post} = Astro.props;
+// const { post} = Astro.props;
 
-const { title, image, description } = post.frontmatter;
+// const { title, image, description } = post.frontmatter;
+
 
 ---
 <div class="post-card">
 
   <div class="left">
-    
-    <h1 transition:name="blog_title"> <a href={post.url}>  {title} </a> </h1>
 
-    <p>{description}...<span><a href={post.url}>Read more</a></span></p>
+    
+    <!-- <h1 transition:name="blog_title"> <a href={post.url}>  {title} </a> </h1>
+
+    <p>{description}... <span><a href={post.url}>Read more</a></span></p> -->
+
   </div>
   
   <div class="right">
 
-    <a href={post.url}>
+    <!-- <a href={post.url}>
 
       <Image
-      class="post-image" 
-
-      src={image.src} 
-      alt={image.alt}
-      width={image.width}
-      height={image.height}
-
+        src={image.src} 
+        alt={image.alt}
+        class="post-image"
+        width="100"
+        height="100"
+      
       transition:name="blog-image"
       />
+
+    </a> -->
       
   </div>
 
@@ -40,6 +44,7 @@ const { title, image, description } = post.frontmatter;
   .post-card {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .left {
