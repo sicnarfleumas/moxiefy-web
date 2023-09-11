@@ -2,13 +2,11 @@
 title: "Breaking Decision Paralysis - Helping Your Customers Make Confident Choices"
 description: "Unlock Confident Choices: Beat Decision Paralysis with 5 Strategies for Empowering Customers."
 author: Shivani Bhat
-image: {
-  src: "../../assets/images/blog/1_Decision_Paralysis/Header.jpg",
-  alt: "Shopping card in an aisle of a supermarket."
-}
-  
+image:
+  src: /src/assets/images/blog/1_Decision_Paralysis/header.jpg
+  alt: "Shopping cart in an aisle of a supermarket."
 date: 2023-09-02
-draft: true
+draft: false
 ---
 
 As a brand, your goal is to provide customers with the best possible choices that meet their needs.
@@ -30,7 +28,7 @@ One of the main reasons for decision paralysis is complex and convoluted informa
 ## 3. Providing Comparative Data 
 Customers often find it challenging to assess the pros and cons of different options which leads to indecision. An effective way to combat this is by providing comparative data which could include price, specifications, customer reviews, ratings or other relevant metrics which will allow customers to weigh their options easily, facilitating confident decision-making.
 
-<!-- <img src="../../assets/images/blog/1_Decision_Paralysis/Point3.jpg" alt="Choice between two bottles of oil." style="height: 100px; width:100px;"> -->
+<img src="../../assets/images/blog/1_Decision_Paralysis/Point3.jpg" alt="Choice between two bottles of oil." style="height: 100px; width:100px;">
 
 ## 4. Product Recommendation
 One effective strategy to reduce the number of choices for customers is to offer product recommendations. In an era of data-driven insights, your business can leverage Customer preferences and purchase history to provide personalized recommendations. The more optimized, precise and accurate the recommendation system, the more it will reduce decision complexity and enhance the overall shopping experience.
@@ -39,7 +37,7 @@ One effective strategy to reduce the number of choices for customers is to offer
 
 Humanizing the shopping experience is crucial to breaking decision paralysis. One-on-one communication through assisted selling can help your business provide targeted advice and insights, as well as personalized guidance tailored to each individual customer based on their needs. Combining this with visual aids which help customers to visualize products, better understand product features, and compare options effortlessly, can greatly simplify the decision-making process.
 
-<!-- ![Rep Helping Customer](../../assets/images/blog/1_Decision_Paralysis/Point5.jpg) -->
+![Rep Helping Customer](../../assets/images/blog/1_Decision_Paralysis/Point5.jpg)
 
 ## Conclusion
 As you can see, in today's market, there is such a thing as “too much choice” which can hinder customers’ decision making. However, businesses have the power to alleviate this burden of choice and boost sales by offering clear and concise information, offering personalized recommendations, providing comparative data, and humanizing the shopping experience. Helping your customers make confident choices will lead to a positive and loyal customer base, building long-term success for your brand. 

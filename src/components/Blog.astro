@@ -1,8 +1,6 @@
 ---
 
-import { getCollection } from "astro:content";
 
-const blogPosts = await getCollection("blog");
 
 
 // Import Components
@@ -14,9 +12,9 @@ import PostCard from './PostCard.astro'
 ---
 
 <section id="Blog">
-  <!-- <h1><span>Blo</span>g</h1> -->
-
- { blogPosts.map((post) => (<PostCard post={post} />))}
+  <h1><span>Blo</span>g</h1>
+  
+  <PostCard />
 
 </section>
 
@@ -25,10 +23,5 @@ import PostCard from './PostCard.astro'
     background-image: 
     linear-gradient(to bottom, #A758D3 0%, #a75ad3 74% 125%, #A351D2 104% 107%);
   }
-
-  h1 {
-    color: white;
-  }
-
   
 </style>
