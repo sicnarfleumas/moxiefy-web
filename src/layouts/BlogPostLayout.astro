@@ -1,28 +1,20 @@
----
-// Utilities
+<!-- ---
+// Import utilities
 import { ViewTransitions } from "astro:transitions";
 
-import { Image } from "astro:assets";
+// Import styles
+import '../styles/global.css';
 
-
-// Import Fonts
-import '@fontsource/barlow-condensed';
-import '@fontsource/barlow';
-
-
-// Components
+// Import components
 import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
 
-// Styles
-import '../styles/blog.css';
+// Astro props
+const {
+  title = "Default title",
+  description = "Default description",
 
-
-
-// Frontmatter
-const {frontmatter} = Astro.props;
-
-const { title, description, image } = frontmatter;
+} = Astro.props;
 ---
 
 <html lang="en">
@@ -32,6 +24,7 @@ const { title, description, image } = frontmatter;
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
+
 		<title>{title}</title>
 
 		<ViewTransitions />
@@ -39,36 +32,17 @@ const { title, description, image } = frontmatter;
 	</head>
 
   <body>
-
-		<Nav />
-
-    <main>
-      <article>
-				<h1 transition:name="blog_title">{title}</h1>
-				<Image 
-				class="blog-image" 
-				src={image.src}
-				alt={image.alt}
-				width={image.width}
-				height={image.height}
-				transition:name="blog-image"
-				/>
-        <slot />
-      </article>
-
-    </main>
-
-    <Footer />  
-
+		<Nav/>
+		<slot>
+      Default content
+    </slot>
+		<Footer />
 	</body>
   
 </html>
 
 <style>
-	.blog-image {
-		width: 100%;
-		height: auto;
-	}
+	
 
 	
-</style>
+</style> -->

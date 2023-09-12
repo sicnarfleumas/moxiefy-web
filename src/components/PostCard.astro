@@ -17,7 +17,7 @@ const blogPosts = await getCollection("blog", ({data}) => {
       blogPosts.map(post  => (
         <h1>{post.data.title}</h1>
         <p>{post.data.description}</p>
-        <a href={post.slug}>. . . Read More</a>
+        <a href={`/blog/${post.slug}/`}>. . . Read More</a>
       ))
     }
    
@@ -43,8 +43,6 @@ const blogPosts = await getCollection("blog", ({data}) => {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: first ;
-    
     
   }
 

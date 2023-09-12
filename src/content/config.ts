@@ -1,6 +1,6 @@
 import { z, defineCollection }  from "astro:content";
 
-const blog = defineCollection({
+const blogCollection = defineCollection({
   schema: z.object ({
     title: z.string(),
     description: z.string().max(160, "Description must be less than 160 characters"),
@@ -14,4 +14,4 @@ const blog = defineCollection({
   }),
 });
 
-export const collections = { blog };
+export const collections = { blog: blogCollection };
