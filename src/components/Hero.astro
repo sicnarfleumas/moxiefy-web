@@ -15,7 +15,10 @@ import CTA from './buttons/HeroButton.astro';
 
   <div class="left">
     <strong>Bold ideas <br>need <br>fearless <br>execution.</strong>
+    
     <CTA cta = "CONNECT"/>
+
+    <b class="sub">Creative <br>Marketing <br>Solutions for <br>the Bold New <br>World.</b>
   </div>
 
     <div class="mid">
@@ -37,6 +40,10 @@ import CTA from './buttons/HeroButton.astro';
   @font-face {
     font-family: 'TAN - Angleton Regular';
     src: url('/fonts/TAN - Angleton Regular.ttf') format('TrueType');
+  }
+
+  .sub {
+    display: none;
   }
 
   .Hero {
@@ -101,5 +108,48 @@ import CTA from './buttons/HeroButton.astro';
       height: auto;
     }
 
+    @media screen and (max-width: 576px) {
 
+      .Hero {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        padding: 10% 0%;
+      }
+      .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+      }
+      .right {
+        display: none;
+      }
+
+      br {
+        display: none;
+      }
+      strong {
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 2;
+      }
+
+      .sub {
+        display: block;
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 2;
+        width: 25ch;
+      }
+
+    }
+
+ 
+
+  @media screen and (min-width: 577px) and (max-width: 1024px) {
+  }
 </style>

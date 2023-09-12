@@ -2,7 +2,6 @@
 // Import Utilities
 
 // Import style
-import style from '../styles/global.css'
 
 // Import Buttons
 import BResume from './buttons/Resume.astro';
@@ -37,6 +36,28 @@ import BResume from './buttons/Resume.astro';
 
   div > h1 {
     text-align: right;
+  }
+
+  @media screen and (max-width: 576px) {
+    .About {
+      max-width: 100dvh;
+    }
+    div > h1 {
+      text-align: right;
+
+    }
+
+    div > h2 {
+      text-align: left;
+    }
+  }
+
+  p {
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  @media screen and (min-width: 577px) and (max-width: 1024px) {
   }
 
 

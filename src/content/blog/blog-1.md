@@ -9,7 +9,6 @@ date: 2023-09-02
 
 
 draft: false
-slug: breaking-decision-paralysis-helping-your-customers-make-confident-choices
 ---
 
 As a brand, your goal is to provide customers with the best possible choices that meet their needs.

@@ -34,7 +34,7 @@ import arrow from "../assets/images/process/Arrow.png";
         <Image 
           src={folder} 
           alt="folder icon"
-          class="icon icon-right"
+          class="icon icon-right "
         />
     </div>
     
@@ -208,5 +208,45 @@ import arrow from "../assets/images/process/Arrow.png";
   .arrow {
     width:  4rem;
     height: auto;
+  }
+
+/* Responsive Styling */
+  
+@media screen and (max-width: 576px) {
+
+  .divider, .divider-flip, .img {
+    display: none;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    border: solid #B6E851;
+    border-width: 0 0 2px 0;
+  }
+
+  p {
+    /* font-size: 1rem;
+    width: 30ch; */
+    display: none;
+  }
+
+  .left-align {
+    text-align: left;
+  }
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 0;
+  }
+
+}
+ 
+
+  @media screen and (min-width: 577px) and (max-width: 1024px) {
   }
 </style>
