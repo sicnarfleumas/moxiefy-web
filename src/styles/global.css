@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
   font: inherit;
-  overflow-x: hidden;
 }
 
 section {
@@ -100,6 +99,12 @@ a {
 
 /* Medium screens (tablets) */
 @media screen and (min-width: 577px) and (max-width: 1024px) {
+  *,
+*::after,
+*::before{
+  
+  overflow-x: hidden;
+}
   section {
     padding: 5% 10%;
   }
