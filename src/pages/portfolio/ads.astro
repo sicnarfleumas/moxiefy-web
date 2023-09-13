@@ -38,12 +38,9 @@ import MainLayout from "../../layouts/MainLayout.astro";
     </section>
 
     <div class="imgholder">
-
         <Image src={Ad1} alt="Captivating Destinations" class="Image" />
         <Image src={Ad2} alt="Exuberant Festivals" class="Image"/>
         <Image src={Ad3} alt="Electrifying Adventures" class="Image"/>
-
-
     </div>
 
     <section>
@@ -61,12 +58,11 @@ import MainLayout from "../../layouts/MainLayout.astro";
     }
 
     .imgholder {
-        background: #6010A9;
+        background-image: linear-gradient(to bottom, #A659D2 0%, #6111AA 100%);
         display: flex;
         flex-direction: row;
 
         justify-content: space-between;
-        align-items: top;
         gap: 1rem;
 
         margin: 0 -3.5%;
@@ -74,7 +70,47 @@ import MainLayout from "../../layouts/MainLayout.astro";
     }
 
     .Image {
-        width: 100%;
-        height: 30rem;
+        width: 33rem;
+        height: auto;
     }
+
+@media screen and (max-width: 576px) {
+
+    .imgholder {
+        width: 100%;
+        overflow-x: hidden;
+        gap: 5rem;
+    }
+
+
+
+br {
+    display: none;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.5 ;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.75rem;
+    line-height: 1.5 ;
+    text-align: left;
+}
+
+p {
+    font-size: 1.25rem;
+    line-height: 2;
+    text-align: left;
+}
+.Image {
+    width: 10rem;
+    height: auto;
+    margin: 0 -10%;
+    
+}
+
+}
 </style>

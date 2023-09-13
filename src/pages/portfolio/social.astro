@@ -39,7 +39,7 @@ import MainLayout from "../../layouts/MainLayout.astro";
             <h2>Results</h2>
 
             <p>Compared to the previous content strategy of only posting static posts, highlighting a single destination, using a combination of formats resulted in more engagement. </p>
-        
+
             <p>The reels related to festive content were found to be the best performing posts. </p>
         
             <p>This also resulted in micro and mid-tiered travel influencers and travel bloggers reaching out for collaborations. </p>
@@ -62,12 +62,7 @@ import MainLayout from "../../layouts/MainLayout.astro";
     section {
         background-image: linear-gradient(to bottom, #6010a9 0%, #a659d2 100%);
     }
-    h3 {
-        font-family: 'Barlow', sans-serif;
-        font-size: 2.625rem;
-        color: #6D549E;
-        text-transform: uppercase;
-    }
+    
 
     .results {
         display: flex;
@@ -75,4 +70,85 @@ import MainLayout from "../../layouts/MainLayout.astro";
         align-items: center;
 
     }
+
+    @media screen and (max-width: 576px) {
+
+        section {
+            padding: 2 0rem;
+        }
+
+        br {
+            display: none;
+        }
+    
+        h1 {
+            font-size: 2rem;
+            line-height: 1.5 ;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            line-height: 1.5 ;
+            text-align: left;
+        }
+
+        p {
+            font-size: 1.25rem;
+            line-height: 1.5 ;
+            text-align: left;
+        }
+
+        .results {
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        img {
+            width: auto;
+            height: 35rem;
+        }
+    
+  }
+
+ 
+
+  @media screen and (min-width: 577px) and (max-width: 1024px) {
+    section {
+            padding: 2 0rem;
+        }
+
+        br {
+            display: none;
+        }
+    
+        h1 {
+            font-size: 2rem;
+            line-height: 1.5 ;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            line-height: 1.5 ;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.25rem;
+            line-height: 1.5 ;
+            text-align: left;
+        }
+
+        .results {
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        img {
+            width: auto;
+            height: 35rem;
+        }
+    
+  }
 </style>

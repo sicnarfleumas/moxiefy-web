@@ -38,15 +38,11 @@ import MainLayout from "../../layouts/MainLayout.astro";
 
         <div id="left">
             <div id="top">
-
-                <Image src={left} alt="Instagram Account" height={420} /> 
-            
+                <Image src={left} alt="Instagram Account" height={420} class="box" /> 
             </div>
 
             <div id="bottom">
-                
                 <h3>Capturing the brand <br>proposition through <br>packaging design </h3>
-            
             </div>
 
         </div>
@@ -55,7 +51,7 @@ import MainLayout from "../../layouts/MainLayout.astro";
 
             <div id="top">
 
-                <Image src={right} alt="Instagram Account" height={320} />
+                <Image src={right} alt="Instagram Account" height={320} class="meme"/>
             </div>
 
             <div id="bottom">
@@ -92,6 +88,60 @@ import MainLayout from "../../layouts/MainLayout.astro";
         align-items: center;
     }
 
+    @media screen and (max-width: 576px) {
 
+section {
+    padding: 2 0rem;
+}
+
+br {
+    display: none;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.5 ;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.75rem;
+    line-height: 1.5 ;
+    text-align: left;
+}
+
+p {
+    font-size: 1.25rem;
+    line-height: 1.5 ;
+    text-align: left;
+}
+
+h3 {
+    font-size: 1rem;
+    line-height: 1.5 ;
+    text-align: center;
+}
+
+.results {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+
+.box {
+    width: auto;
+    height: 20rem;
+    margin-left: 15%;
+}
+
+.meme {
+    width: 100%;
+    height: auto;
+}
+
+
+}
 
 </style>

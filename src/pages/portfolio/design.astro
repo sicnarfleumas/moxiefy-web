@@ -54,18 +54,18 @@ import MainLayout from "../../layouts/MainLayout.astro";
             </div>
         </div>
 
-        <Image src={nine} alt="Ads Portfolio" />
+        <Image src={nine} alt="Ads Portfolio" class='resize'/>
             
         <h2>personal projects</h2>
 
         <div class="PProjects">
             <div class="left">
-                <Image src={ten} alt="Ads Portfolio" height={400}  />
-                <Image src={eleven} alt="Ads Portfolio" height={400} />
+                <Image src={ten} alt="Ads Portfolio" height={400}  class='resize'/>
+                <Image src={eleven} alt="Ads Portfolio" height={400} class='resize'/>
             </div>
 
             <div class="right">
-                <Image src={twelve} alt="Ads Portfolio" height={800}/>
+                <Image src={twelve} alt="Ads Portfolio" height={800} class='resize'/>
             </div>
             
         </div>
@@ -74,8 +74,6 @@ import MainLayout from "../../layouts/MainLayout.astro";
             <div id="together" >
                 <Image src={fifteen} alt="Ads Portfolio"    height={350} quality={"high"}/>
                 <Image src={fourteen} alt="Ads Portfolio"  height={350} quality={"high"}/>
-
-
             </div>
 
         </div>
@@ -145,4 +143,59 @@ import MainLayout from "../../layouts/MainLayout.astro";
         display: flex;
         gap: 0rem;
     }
+
+@media screen and (max-width: 576px) {
+
+        section {
+            padding: 2 0rem;
+        }
+
+        br {
+            display: none;
+        }
+
+        h1 {
+            font-size: 2rem;
+            line-height: 1.5 ;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            line-height: 1.5 ;
+            text-align: left;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            line-height: 1.5 ;
+            text-align: left;
+        }
+
+        #row {
+            flex-direction: column;
+        gap: 2rem;
+
+        }
+
+        .PProjects {
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        #bottom {
+            flex-direction: column;
+        gap: 2rem;
+
+        }
+
+        #together {
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .resize {
+            width: 100%;
+            height: auto;
+        }
+}
 </style>
