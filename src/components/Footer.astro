@@ -41,12 +41,12 @@ import linkedin from "../assets/images/social-icons/linkedin_white.png"
   <div class="bottom">
     <nav class="Navigation" id="Navigation">
           <ul>
-              <a href="/"><li>Home</li></a>
-              <a href="/#About"><li>About</li></a>            
-              <a href="/#Services"><li>Services</li></a>            
-              <a href="/#Portfolio"><li>Portfolio</li></a>            
-              <a href="/#Blog"><li>Blog</li></a>            
-              <a href="/#Contact"><li>Contact</li></a>
+            <li><a href="/">Home</a></li>
+            <li><a href="/#About">About</a></li>
+            <li><a href="/#Services">Services</a></li>
+            <li><a href="/#Portfolio">Portfolio</a></li>
+            <li><a href="/#Blog">Blog</a></li>
+            <li><a href="/#Contact">Contact</a></li>
           </ul>
     </nav>
   </div>
@@ -181,6 +181,14 @@ li {
     color: #fff;
 }
 
+li > a {
+  color: #fff;
+
+}
+li > a:hover {
+    border-bottom: solid .2rem #B6E851;
+    color: #c9c9c9;
+}
 
 @media screen and (max-width: 576px) {
   

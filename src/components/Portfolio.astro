@@ -5,8 +5,8 @@ import { Image } from 'astro:assets';
 
 // Import Images
 import Ads from "../assets/images/portfolio/banner/1.png";
-import Design from "../assets/images/portfolio/banner/3.png";
-import Branding from "../assets/images/portfolio/banner/2.png";
+import Design from "../assets/images/portfolio/banner/2.png";
+import Branding from "../assets/images/portfolio/banner/3.png";
 import Social from "../assets/images/portfolio/banner/4.png";
 
 ---
@@ -19,14 +19,14 @@ import Social from "../assets/images/portfolio/banner/4.png";
         <a href='portfolio/ads'>
           <Image src={Ads} alt="Ads Portfolio">
         </a>
-        <h2>meta ad <br>creatives</h2>
+        <h2><a href='portfolio/ads'>meta ad <br>creatives</a></h2>
       </div>
       
       <div class="design" id="card">
         <a href="portfolio/design">
           <Image src={Design} alt="Design Portfolio" />
         </a>
-        <h2>brand proposition <br>development</h2>
+        <h2><a href="portfolio/design">brand proposition <br>development</a></h2>
       </div>
       
     </div>
@@ -36,14 +36,14 @@ import Social from "../assets/images/portfolio/banner/4.png";
         <a href="portfolio/brand">
           <Image src={Branding} alt="Branding Portfolio" />
         </a>
-        <h2>Marketing and <br>Advertising Designs</h2>
+        <h2><a href="portfolio/brand">Marketing and <br>Advertising Designs</a></h2>
 
       </div>
       <div class="social" id="card">
         <a href="portfolio/social">
           <Image src={Social} alt="Social Media Portfolio" />
         </a>
-        <h2>social media <br>creatives</h2>
+        <h2><a href="portfolio/social">social media <br>creatives</a></h2>
       </div>
       
     </div>
@@ -99,7 +99,9 @@ import Social from "../assets/images/portfolio/banner/4.png";
 
         gap: 2rem;
     }
-
+    #card {
+      transition: transform 0.3s ease-in-out; 
+}
     #card:hover {
       transform: scale(1.05);
     }
