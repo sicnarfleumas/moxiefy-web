@@ -52,7 +52,6 @@ import MainLayout from "../../layouts/MainLayout.astro";
 </MainLayout>
 
 <style>
-
     section {
         background-image: linear-gradient(to bottom, #6010a9 0%, #a659d2 100%);
     }
@@ -77,9 +76,14 @@ import MainLayout from "../../layouts/MainLayout.astro";
 @media screen and (max-width: 576px) {
 
     
+
     .imgholder {
-        width: 105%;
-        gap: 5rem;
+        width: 100dvh%;
+        gap: .1rem;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+
     }
 
 
@@ -106,10 +110,9 @@ p {
     text-align: left;
 }
 .Image {
-    width: 10rem;
+    width: 8rem;
     height: auto;
-    margin: 0 -10%;
-    
+    gap: 1rem; 
 }
 
 }
