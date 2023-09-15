@@ -29,8 +29,16 @@ const posts = (await getCollection('blog')).sort(
 						posts.map((post) => (
 							<li>
 								<a href={`/blog/${post.slug}/`}>
-									<img width={720} height={360} src={post.data.heroImage} alt="" />
-									<h4 class="title">{post.data.title}</h4>
+									<div class="img-wrap">
+											<img src={post.data.heroImage} 
+											width="100%" 
+											height="100%" 
+											alt="Blog Hero Image" 
+											style="vertical-align:bottom"
+											transition:name="heroImage"
+											/>
+										</div>
+									<h4 class="title" transition:name="blogTitle">{post.data.title}</h4>
 									<p class="date">
 										<FormattedDate date={post.data.pubDate} />
 									</p>
@@ -52,6 +60,15 @@ const posts = (await getCollection('blog')).sort(
 	background-image: 
     linear-gradient(to bottom, #6010a9 0%, #a75ad3 100%)
   ;
+	}
+
+	.img-wrap {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%; 
+		height: 20rem; 
 	}
 
 	ul {

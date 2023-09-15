@@ -1,7 +1,7 @@
 ---
 title: "Breaking Decision Paralysis - Helping Your Customers Make Confident Choices"
 description: "Unlock Confident Choices: Beat Decision Paralysis with 5 Strategies for Empowering Customers."
-heroImage: '../../assets/images/blog/1_Decision_Paralysis/header.jpg'
+heroImage: /blog1.jpg
 pubDate: 2023-09-02
 draft: false
 ---
