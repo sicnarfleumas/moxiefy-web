@@ -14,7 +14,7 @@ import BCTA from "./buttons/CTA.astro";
     display: flex;
     flex-direction: column;
     align-items: left;
-    justify-content: center;
+    justify-content: left;
     background-color: white;
     padding: 2% 15%;
   }
@@ -29,13 +29,14 @@ import BCTA from "./buttons/CTA.astro";
 
   @media screen and (max-width: 576px) {
     .Cta {
-      padding: 15% 5%;
+      padding: 1% 2% 15% 0%;
       align-items: center;
+      gap: .15rem;
     }
     .Cta > h1 {
-      font-size: 2.5rem;
-      line-height: 2;
-      text-align: left;
+      font-size: 2rem;
+      line-height: 1.5;
+      text-align: center;
 
     }
 
