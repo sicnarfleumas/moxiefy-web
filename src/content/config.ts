@@ -1,17 +1,15 @@
-// import { z, defineCollection }  from "astro:content";
+import { defineCollection, z } from 'astro:content';
 
-// const blogCollection = defineCollection({
-//   schema: z.object ({
-//     title: z.string(),
-//     description: z.string().max(160, "Description must be less than 160 characters"),
-//     author: z.enum(["Shivani Bhat"]),
-//     date: z.date(),
-//     draft: z.boolean(),
-//     image: z.object({
-//       src: z.string(),
-//       alt: z.string(),
-//     }),
-//   }),
-// });
+const blog = defineCollection({
+	// Type-check frontmatter using a schema
+	schema: z.object({
+		title: z.string(),
+		description: z.string(),
+		// Transform string to Date object
+		pubDate: z.coerce.date(),
+		updatedDate: z.coerce.date().optional(),
+		heroImage: z.string().optional(),
+	}),
+});
 
-// export const collections = { blog: blogCollection };
+export const collections = { blog };

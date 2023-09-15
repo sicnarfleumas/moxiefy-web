@@ -14,41 +14,53 @@ main {
   padding: 5% 17%;
 
   gap: 3rem;
+
+  background-image: 
+    linear-gradient(to bottom, #6010a9 0%, #a559d2 100%)
+  ;
 }
 
-article > h1 {
+
+h1 {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 900;
-  color: #6D549E;
+  color: #fff;
   text-transform: uppercase;
-  text-align: left;
+  text-align:  center;
+  
   font-size: 2.5rem;
-  line-height: 1.5;
+  line-height: 2;
+
+  text-decoration: underline #B6E851 5px;
+  
 }
 
-
-
-article > h2 {
+h2 {
   font-family: 'Barlow', sans-serif;
   font-size: 2rem;
-  color: #6D549E;
+  color: #B6E851;
   text-transform: uppercase;
   font-weight: 900;
-  line-height: 2;
+  line-height: 2.5;
 }
 
-
-article > p {
+p {
   font-family: 'Barlow', sans-serif;
-  font-weight: 500;
-  font-size: 1.5rem;
-  color: black;
+  font-size: 1.7rem;
+  color: #fff;
   line-height: 2;
+  text-align: justify;
+  width: 60ch;
+  padding: 1.5rem 0rem;
 }
+
+
+
 
 
 img {
   width: 60rem;
+  height: auto;
 }
 
 @media only screen and (max-width: 600px) {
