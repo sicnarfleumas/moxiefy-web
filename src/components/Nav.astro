@@ -5,21 +5,36 @@ import { Image } from 'astro:assets';
 import facebook from "../assets/images/social-icons/facebook.png"
 import instagram from "../assets/images/social-icons/instagram.png"
 import linkedin from "../assets/images/social-icons/linkedin.png"
+import open from "../assets/icon-open.svg"
+import close from "../assets/icon-close.svg"
+// Import Js
+
 ---
 
-<div class="Nav-Container">
-<nav id="Nav">
-    <h6><a class="logo" href="/">moxie<span>fy</span></a></h6>
-        <ul>
+
+
+<header class="primary-header">
+
+    <script src="./js/Nav.js"></script>
+
+    <div class="container">
+      <div class="nav-wrapper">
+        <h6><a class="logo" href="/">moxie<span>fy</span></a></h6>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <Image src={open} alt="" aria-hidden="true" class="icon-hamburger">
+            <Image src={close} alt="" aria-hidden="true" class="icon-close">
+            <span class="visually-hidden">Menu</span>
+        </button>
+        <nav class="primary-navigation" id="primary-navigation">
+          <ul aria-label="Primary" role="list" class="nav-list">
             <li><a href="/#About">About</a></li>
             <li><a href="/#Services">Services</a></li>
             <li><a href="/#Portfolio">Portfolio</a></li>
             <li><a href="/blog">Blog</a></li>
             <li><a href="/process">Process</a></li>
             <li><a href="/#Contact">Contact</a></li>
-        </ul>
-        
-        <div class="socials">
+          </ul>
+          <div class="icons">
             <a href="https://www.facebook.com/people/Moxiefy/61550828314507/" target="_blank">
                 <Image class="icons" src={facebook} alt="Facebook logo" />
             </a>
@@ -29,30 +44,17 @@ import linkedin from "../assets/images/social-icons/linkedin.png"
             <a href="https://www.linkedin.com/company/moxiefydigital" target="_blank">
                 <Image class="icons" src={linkedin} alt="LinkedIn logo" />
             </a>
-        </div>
-           
+          </div>
+        </nav>
         
-</nav>
-</div>
+    </div>
+  </header>
 
 <style>
+/* Logo Styling */
 @font-face {
   font-family: 'Architype Bayer-type W90';
   src: url('/fonts/Architype Bayer-type W90.woff') format('woff');
-}
-
-.Nav-Container {
-    background-color: #6010A9;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-nav {
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    background-color: white;
 }
 
 h6 {
@@ -62,6 +64,37 @@ h6 {
     color: #6D549E;
 }
 
+a > span {
+  text-decoration: none;
+  color: #B6E851;
+}
+
+/* Utility Classes */
+
+.visually-hidden {
+    position: absolute;
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	clip: rect(0,0,0,0) !important;
+	white-space: nowrap !important;
+	border: 0 !important;
+}
+
+/* Social Media Icons */
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .7rem;
+    height: 2rem;
+    width: auto;
+}
+
+/* navigation */
 ul {
     display: flex;
     gap: 3rem;
@@ -71,78 +104,122 @@ ul {
 li {
     display: inline-block;
     list-style: none;
-    font-size: 22.6px;
+    font-size: 1.5rem;
     font-family: 'Barlow Condensed', sans-serif;
     text-transform: uppercase;
-    color: #6D549E;
 }
-
-li > a:hover {
-    border-bottom: solid .2rem #B6E851;
-    color: #9B84B2;
-}
-.socials {
+nav {
     display: flex;
-    gap: 0.75rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+.primary-header {
+  padding-top: 3rem;
+  background-color: #6010A9;
 }
 
-.icons {
-    height: 2rem;
-    width: auto;
+.container {
+    background-color: #fff;
 }
 
+.nav-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5rem;
+}
 
-a > span {
+.mobile-nav-toggle {
+  display: none;
+}
+
+.nav-list {
+  font-size: 0.9375rem;
+}
+
+.nav-list {
+  display: flex;
+  gap: clamp(1rem, 5vw, 3rem);
+  font-weight: 500;
+}
+
+.nav-list a {
   text-decoration: none;
-  color: #B6E851;
+  color: #6D549E;
 }
 
-a {
-    text-decoration: none;
-    color: #6D549E;
-}
+.nav-list a:hover,
+.nav-list a:focus {
+    border-bottom: solid .2rem #B6E851;
+    color: #9B84B2;}
 
-@media screen and (max-width: 576px) {
-        
-    nav {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 15% 5%;
+
+@media screen and (max-width: 50em ) {
+    .nav-wrapper {
+        justify-content: left;
+        gap: 2rem;
     }
-
-    ul {
-       display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1rem;
-    }
-
-    li {
-        padding: 1.5rem 0;
-        font-size: 1.25rem;
-    }
-
-    .socials {
-        padding: 1rem 0;
-    }
-
-    .icons {
-        height: 1.5rem;
-    }
-
-    h6 {
-        font-size: 2rem;
-    }
-
-    
-
-    .logo {
-        padding-bottom: 1rem;
-    }
+    .primary-navigation {
+    display: none;
+    position: fixed;
+    padding: 3rem;
+    inset: 7rem 1rem auto;
+    max-width: 25rem;
+    margin-left: auto;
+    background: #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0.75em rgb(0, 0, 0, 0.05);
   }
 
- 
+  .container {
+    padding: 2rem;
+  }
 
+
+  
+  .primary-header[data-overlay]::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    /* height: 100vh; */
+    background-image: linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.8));
+  }
+
+  .nav-list {
+    display: grid;
+    gap: 2rem;
+    text-align: left;
+    font-weight:700;
+  }
+
+  .icons {
+    justify-content: space-around;
+    gap: .2rem
+  }
+
+  .primary-navigation[data-visible] {
+    display: block;
+    
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    top: 5rem;
+    right: 1rem;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    padding: 0.5em;
+  }
+
+  .mobile-nav-toggle .icon-close {
+    display: none;
+  }
+}
+   
+        
   @media screen and (min-width: 577px) and (max-width: 1024px) {
   }
 
