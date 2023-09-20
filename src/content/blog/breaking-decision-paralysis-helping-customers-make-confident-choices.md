@@ -19,7 +19,8 @@ The first step towards breaking decision paralysis is to reduce the number of op
 ## 2. Providing Clear Information
 One of the main reasons for decision paralysis is complex and convoluted information. Presenting information in clear, sucking and easy-to-understand language can help simplify complex purchasing decisions and help customers make a well-informed choice without feeling overwhelmed. 
 
-## 3. Providing Comparative Data 
+## 3. Providing Comparative Data
+![Customer trying to choose](../../assets/images/blog/1_Decision_Paralysis/Point3.jpg)
 Customers often find it challenging to assess the pros and cons of different options which leads to indecision. An effective way to combat this is by providing comparative data which could include price, specifications, customer reviews, ratings or other relevant metrics which will allow customers to weigh their options easily, facilitating confident decision-making.
 
 
@@ -27,6 +28,7 @@ Customers often find it challenging to assess the pros and cons of different opt
 One effective strategy to reduce the number of choices for customers is to offer product recommendations. In an era of data-driven insights, your business can leverage Customer preferences and purchase history to provide personalized recommendations. The more optimized, precise and accurate the recommendation system, the more it will reduce decision complexity and enhance the overall shopping experience.
 
 ## 5. Humanizing the Shopping Experience
+![Customer being guided](../../assets/images/blog/1_Decision_Paralysis/Point5.jpg)
 
 Humanizing the shopping experience is crucial to breaking decision paralysis. One-on-one communication through assisted selling can help your business provide targeted advice and insights, as well as personalized guidance tailored to each individual customer based on their needs. Combining this with visual aids which help customers to visualize products, better understand product features, and compare options effortlessly, can greatly simplify the decision-making process.
 
