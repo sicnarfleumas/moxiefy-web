@@ -5,9 +5,7 @@ import { Image } from 'astro:assets';
 import facebook from "../assets/images/social-icons/facebook.png"
 import instagram from "../assets/images/social-icons/instagram.png"
 import linkedin from "../assets/images/social-icons/linkedin.png"
-import open from "../assets/icon-open.svg"
-import close from "../assets/icon-close.svg"
-// Import Js
+
 
 ---
 
@@ -21,8 +19,7 @@ import close from "../assets/icon-close.svg"
       <div class="nav-wrapper">
         <h6><a class="logo" href="/">moxie<span>fy</span></a></h6>
         <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-            <Image src={open} alt="" aria-hidden="true" class="icon-hamburger">
-            <Image src={close} alt="" aria-hidden="true" class="icon-close">
+            
             <span class="visually-hidden">Menu</span>
         </button>
         <nav class="primary-navigation" id="primary-navigation">
@@ -169,15 +166,15 @@ a:visited {
         gap: 2rem;
     }
     .primary-navigation {
-    display: none;
-    position: fixed;
-    padding: 3rem;
-    inset: 7rem 1rem auto;
-    max-width: 25rem;
-    margin-left: auto;
-    background: #fff;
-    border-radius: 0.25rem;
-    box-shadow: 0 0 0.75em rgb(0, 0, 0, 0.05);
+      display: none;
+      position: fixed;
+      padding: 3rem;
+      inset: 7rem 1rem auto;
+      max-width: 25rem;
+      margin-inline: auto;
+      background: #fff;
+      border-radius: 0.25rem;
+      box-shadow: 0 0 0.75em rgb(0, 0, 0, 0.05);
   }
 
   .container {
@@ -211,16 +208,26 @@ a:visited {
   .mobile-nav-toggle {
     display: block;
     position: absolute;
-    top: 5rem;
+    top: 5.5rem;
     right: 1rem;
     cursor: pointer;
     background: transparent;
     border: 0;
     padding: 0.5em;
+
+    width: 1.5rem;
+    aspect-ratio: 1;
+
+    background-image: url('../assets/icon-open.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
-  .mobile-nav-toggle .icon-close {
-    display: none;
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background-image: url('../assets/icon-close.svg');
+    background-size: contain;
+
   }
 }
    
