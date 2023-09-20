@@ -79,7 +79,7 @@ import email from "../assets/images/symbols/Email.png"
   </div>
   <div class="bottom">
     <nav class="Navigation" id="Navigation">
-          <ul>
+          <ul class="mobile-hidden">
             <li><a href="/">Home</a></li>
             <li><a href="/#About">About</a></li>
             <li><a href="/#Services">Services</a></li>
@@ -89,12 +89,17 @@ import email from "../assets/images/symbols/Email.png"
             <li><a href="/#Contact">Contact</a></li>
           </ul>
     </nav>
+    <a href="/" class="mobile-only">BACK TO TOP</a>
   </div>
 </div>
 
 <style>
   html {
     overflow-x: hidden;
+  }
+
+  .mobile-only {
+    display: none;
   }
 
   .left {
@@ -258,7 +263,23 @@ a {
       /* Add any other properties you want to reset */
     }
 
+    a:visited {
+      color: inherit;
+    }
 @media screen and (max-width: 576px) {
+
+  .mobile-hidden {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 2rem 0 1rem 0;
+  }
   
 
   .top {
@@ -291,7 +312,7 @@ a {
     width: 100%;
   }
 
-  
+}
 
   @media screen and (min-width: 577px) and (max-width: 1024px) {
   }
