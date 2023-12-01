@@ -15,6 +15,9 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
 <html lang="en">
 	<head>
+		<BaseHead title={title} description={description} />
+
+		<!-- MS Clarity -->
 		<script type="text/javascript">
       (function(c,l,a,r,i,t,y){
           c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -23,8 +26,18 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
       })(window, document, "clarity", "script", "jz1s1jksvt");
   </script>
 
+		<!-- Google tag (gtag.js) -->
+		<script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-4XBV4L346Y"></script>
+		<script type="text/partytown">
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
 
-		<BaseHead title={title} description={description} />
+			gtag('config', 'G-4XBV4L346Y');
+		</script>
+
+
+
 	</head>
 
 	<body>
